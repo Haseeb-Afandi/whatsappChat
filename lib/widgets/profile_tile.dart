@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
 
 class ProfileTile extends StatelessWidget {
-  const ProfileTile({super.key});
+  final String username;
+  final String message;
+  final String? time;
+
+  const ProfileTile({
+    super.key,
+    required this.username,
+    required this.message,
+    required this.time,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
+    return Padding(
       padding: EdgeInsets.only(bottom: 2),
       child: ListTile(
         tileColor: Colors.green,
@@ -13,9 +22,9 @@ class ProfileTile extends StatelessWidget {
           backgroundColor: Colors.black,
           radius: 25,
         ),
-        title: Text("Emaan"),
-        subtitle: Text("Emaan"),
-        trailing: Text("Emaan"),
+        title: Text(username),
+        subtitle: Text(message),
+        trailing: Text(time!),
       ),
     );
   }

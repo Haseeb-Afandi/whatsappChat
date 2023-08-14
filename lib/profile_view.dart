@@ -10,16 +10,56 @@ class ProfileView extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            ProfileTile(),
-            ProfileTile(),
-            ProfileTile(),
-            ProfileTile(),
-            ProfileTile(),
-            ProfileTile(),
-            ProfileTile(),
-            ProfileTile(),
-            ProfileTile(),
-            ProfileTile(),
+            ProfileTile(
+              username: "Haseeb",
+              message: "Hi!",
+              time: "12:14 pm",
+            ),
+            ProfileTile(
+              username: "Haseeb",
+              message: "Hi!",
+              time: "12:14 pm",
+            ),
+            ProfileTile(
+              username: "Haseeb",
+              message: "Hi!",
+              time: "12:14 pm",
+            ),
+            ProfileTile(
+              username: "Haseeb",
+              message: "Hi!",
+              time: "12:14 pm",
+            ),
+            ProfileTile(
+              username: "Haseeb",
+              message: "Hi!",
+              time: "12:14 pm",
+            ),
+            ProfileTile(
+              username: "Haseeb",
+              message: "Hi!",
+              time: "12:14 pm",
+            ),
+            ProfileTile(
+              username: "Haseeb",
+              message: "Hi!",
+              time: "12:14 pm",
+            ),
+            ProfileTile(
+              username: "Haseeb",
+              message: "Hi!",
+              time: "12:14 pm",
+            ),
+            ProfileTile(
+              username: "Haseeb",
+              message: "Hi!",
+              time: "12:14 pm",
+            ),
+            ProfileTile(
+              username: "Haseeb",
+              message: "Hi!",
+              time: "12:14 pm",
+            ),
             // Container(
             //   color: Colors.amber,
             //   height: 200,
