@@ -15,10 +15,10 @@ class ProfileTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(bottom: 2),
+      padding: const EdgeInsets.only(bottom: 2),
       child: ListTile(
         tileColor: Colors.green,
-        leading: CircleAvatar(
+        leading: const CircleAvatar(
           backgroundColor: Colors.black,
           radius: 25,
         ),
