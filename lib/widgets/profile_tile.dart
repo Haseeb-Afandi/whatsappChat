@@ -1,3 +1,4 @@
+import 'package:class12/chat.dart';
 import 'package:flutter/material.dart';
 
 class ProfileTile extends StatelessWidget {
@@ -14,17 +15,26 @@ class ProfileTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 2),
-      child: ListTile(
-        tileColor: Colors.green,
-        leading: const CircleAvatar(
-          backgroundColor: Colors.black,
-          radius: 25,
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const Chat()),
+        );
+      },
+      child: Padding(
+        padding: const EdgeInsets.only(bottom: 2),
+        child: ListTile(
+          tileColor: Colors.black,
+          leading: const CircleAvatar(
+            backgroundImage: AssetImage('assets/images/user.jpg'),
+            radius: 25,
+          ),
+          textColor: Colors.white,
+          title: Text(username),
+          subtitle: Text(message),
+          trailing: Text(time!),
         ),
-        title: Text(username),
-        subtitle: Text(message),
-        trailing: Text(time!),
       ),
     );
   }
