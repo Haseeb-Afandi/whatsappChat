@@ -38,7 +38,10 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             IconButton(
-              icon: const Icon(Icons.group),
+              icon: const Icon(
+                Icons.group,
+                color: Colors.grey,
+              ),
               onPressed: () {
                 ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                     content: Text('Ye feature hamare budget sy bahar hy')));
@@ -83,7 +86,7 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
           ],
         ),
       ),
-      backgroundColor: Colors.grey,
+      backgroundColor: const Color.fromARGB(255, 44, 44, 44),
     );
   }
 
